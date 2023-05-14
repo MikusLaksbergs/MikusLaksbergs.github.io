@@ -1,0 +1,51 @@
+/*  DEFAULT  */
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 5vw;
+    font-weight: 800;
+}
+h3 {
+    font-size: 1vw;
+}
+/*  MAIN PAGE  */
+.main-page {
+    position: relative;
+    color: white;
+    padding-bottom: 5%;
+}
+.main-text-container {
+    position: absolute;
+    margin: 20% 10%;
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+.main-buttons {
+    background: transparent;
+}
+/*  CONTACT PAGE  */
+.format-contact {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.col-forma {
+    padding: 2%;
+}
+.footer-format {
+    background-image: url(images/web/footer.jpg);
+    padding: 5% 5% 2% 5%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+}   
