@@ -6,9 +6,19 @@ h1 {
     font-size: 5vw;
     font-weight: 800;
 }
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+  }
 h3 {
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+    }
+  }
 /*  MAIN PAGE  */
 .main-page {
     position: relative;
@@ -26,6 +36,14 @@ h3 {
 .main-buttons {
     background: transparent;
 }
+.main-background {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .main-background {
+        width: 170%;
+    }
+  }
 /*  CONTACT PAGE  */
 .format-contact {
     padding-top: 5%;
