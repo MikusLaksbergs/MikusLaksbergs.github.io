@@ -68,7 +68,7 @@ h3 {
 
 /*  PORTFOLIO PAGE  */
 .port-text-format {
-    padding: 10% 5% 2% 5%;
+    padding: 10% 5% 7% 5%;
     text-align: left;
     width: 100%;
     margin: 0;
@@ -83,10 +83,13 @@ h3 {
 .img {
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 500px;
+    min-height: 200px;
+    object-fit: cover;
 }
 .glide * {
     margin: auto;
+    padding: 0;
 }
 .overlay {
     position: absolute;
