@@ -5,6 +5,7 @@ body {
 h1 {
     font-size: 5vw;
     font-weight: 800;
+    color: rgb(250, 112, 0);
 }
 @media screen and (max-width: 600px) {
     h1 {
@@ -117,4 +118,29 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(255, 117, 4) !important;
+}
+.nav-link {
+    color: white;
+}
+.custom-bullets {
+    list-style: none;
+    padding-left: 1.2em;
+    position: relative;
+  }
+.custom-bullets {
+    list-style: none;
+    padding-left: 1.2em;
+    position: relative;
+  }
+  .custom-bullets li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: orange;
+    font-size: 1.2em;
+    line-height: 1;
   }
