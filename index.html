@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="Būvniecības tāmes sastādīšana. Tāmēšanas pakalpojumi, tai skaitā būvprojekta ekonomiskās daļas izstrāde. Ēku, ceļu būvniecības tāmes un iekšējo, ārējo inženiertīklu tāmes.">
+    <meta name="description" content="Būvniecības tāmes sastādīšana. Būvprojekta ekonomiskās daļas izstrāde. Ēku, ceļu būvniecības tāmes un iekšējo, ārējo inženiertīklu tāmes.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google fonts -->
@@ -35,27 +35,31 @@
 <section id="main">
     <div class="main-page container-fluid p-0">
 
-<!-- NAV BAR -->
-<nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+<!-- Offcanvas Navigācija -->
+<nav class="navbar navbar-dark bg-transparent fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Sākums</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontakti</a>
-        </li>
-      </ul>
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigācija</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Aizvērt"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Sākums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
+
 
 <!-- MAIN TEXT --> 
         <div class="main-text-container">
@@ -63,11 +67,11 @@
             Mikus Laksbergs <br>
           </h1>
           <h3>
-            Sertifikāts ēku būvdarbu vadīšanā <br>
-            Latvijas 1. būvdarbu tāmēšanas čempionāta uzvarētājs <br>
-            Pieredze vairāk par 10 gadiem <br>
+            Sertifikāts <strong>ēku būvdarbu vadīšanā</strong><br>
+            Latvijas 1. būvdarbu tāmēšanas <strong>čempionāta uzvarētājs</strong><br>
+            Pieredze vairāk par <strong>10 gadiem</strong><br>
             <br>
-            <a class="btn btn-dark main-buttons border-0" href="https://www.linkedin.com/in/mikus-laksbergs-52a8511b6/" role="button" ><i class="fa-brands fa-linkedin fa-sm" style="color: #ffffff;"></i></a>
+            <a class="btn btn-dark main-buttons border-0" href="https://www.linkedin.com/in/mikus-laksbergs/" role="button" ><i class="fa-brands fa-linkedin fa-sm" style="color: #ffffff;"></i></a>
             <a class="btn btn-dark main-buttons border-0" href="mailto:mikuslaksbergs@gmail.com" role="button"><i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i></a>
             <a class="btn btn-dark main-buttons border-0" href="tel:+37129673270" role="button"><i class="fa-solid fa-phone-volume fa-sm" style="color: #ffffff;"></i></a>
           </h3> 
@@ -76,70 +80,98 @@
   
 <!-- CONTACTS PAGE -->
 
-<div class="contact-page">
-<div class="row format-contact">
-  <div class="col-lg-4 col-sm-12 col-forma">
-    <div class="card h-100">
-      <img src="images/web/1.png" class="card-img-top" alt="home">
-      <div class="card-body">
-        <h2 class="card-title">Privātpersonām</h2>
-        <p class="card-text">Sastādu tāmes pēc Jūsu velmēm. Iekļaujos norādītajos termiņos un palīdzu ar risinājumu izvēli atbilstoši Jūsu budžeta iespējām.</p>
+<section class="contact-page py-5 bg-light">
+  <div class="container-fluid px-4">
+    <div class="row g-4">
+
+      <!-- Privātpersonām -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100 shadow border-0 w-100">
+          <img src="images/web/1.png" class="card-img-top" alt="Privātpersonām">
+          <div class="card-body text-secondary">
+            <h2 class="card-title text-primary fw-bold">Privātpersonām</h2>
+            <p class="card-text">
+              Piedāvāju profesionālu tāmes sastādīšanu atbilstoši Jūsu vēlmēm un budžeta iespējām. Darbi tiek veikti precīzi, ievērojot noteiktos termiņus, kā arī sniedzu konsultācijas par optimālākajiem risinājumiem.
+            </p>
+            <p><strong>Pakalpojumi:</strong></p>
+          </div>
+              <ul class="list-group list-group-flush custom-bullets">
+              <li class="list-group-item"> Tāme remontdarbiem</li>
+              <li class="list-group-item"> Tāme bankas finansējumam</li>
+              <li class="list-group-item"> Tāme apdrošināšanas gadījumiem</li>
+             </ul>
+        </div>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"> Tāme remontdarbiem</li>
-        <li class="list-group-item"> Tāme bankas finansējumam</li>
-        <li class="list-group-item"> Tāme apdrošināšanas gadījumiem</li>
-      </ul>
+
+      <!-- Būvniekiem -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100 shadow border-0 w-100">
+          <img src="images/web/2.png" class="card-img-top" alt="Būvniekiem">
+          <div class="card-body text-secondary">
+            <h2 class="card-title text-primary fw-bold">Būvniekiem</h2>
+            <p class="card-text">
+              Piedāvāju precīzu un pārskatāmu tāmes sastādīšanu gan publiskajiem, gan privātajiem iepirkumiem. Sagatavoju tāmes ēku, ceļu, kā arī iekšējo un ārējo inženiertīklu būvniecībai, ievērojot visus nepieciešamos standartus un termiņus.
+            </p>
+            <p><strong>Pakalpojumi:</strong></p>
+          </div>
+          <ul class="list-group list-group-flush custom-bullets">
+            <li class="list-group-item"> Tāme publiskajiem iepirkumiem</li>
+              <li class="list-group-item"> Tāme privātiem pasūtījumiem</li>
+              <li class="list-group-item"> Apjomu aprēķins un skaitīšana</li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Projektētājiem -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100 shadow border-0 w-100">
+          <img src="images/web/3.png" class="card-img-top" alt="Projektētājiem">
+          <div class="card-body text-secondary">
+            <h2 class="card-title text-primary fw-bold">Projektētājiem</h2>
+            <p class="card-text">
+              Sagatavoju būvprojekta tāmes un apjomu aprēķinus ar augstu precizitāti, nodrošinot minimālus labojumus ekspertīzes laikā. Tāmes iespējams parakstīt arī BIS sistēmā, ievērojot visus normatīvos un tehniskos nosacījumus.
+            </p>
+            <p><strong>Pakalpojumi:</strong></p>
+          </div>
+          <ul class="list-group list-group-flush custom-bullets">
+            <li class="list-group-item"> Tāme Jūsu idejas prezentēšanai vai izvērtēšanai</li>
+              <li class="list-group-item"> Tāme būvprojekta minimālā sastāvā</li>
+              <li class="list-group-item"> Būvprojekta ekonomiskās daļas izstrāde</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-  
-  <div class="col-lg-4 col-sm-12 col-forma">
-    <div class="card h-100">
-      <img src="images/web/2.png" class="card-img-top" alt="home">
-      <div class="card-body">
-        <h2 class="card-title">Būvniekiem</h2>
-        <p class="card-text">Aktīvi sastādu tāmes publiskajiem un privātajiem iepirkumiem. Sastādu tāmes ēku un ceļu būvniecībai, kā arī iekšējo un ārējo inženiertīklu būvniecībai.</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"> Tāme publiskiem iepirkumiem</li>
-        <li class="list-group-item"> Tāme privātiem pasūtījumiem</li>
-        <li class="list-group-item"> Apjomu skaitīšana</li>
-      </ul>
-      </div>
-    </div>
-  <div class="col-lg-4 col-sm-12 col-forma">
-    <div class="card h-100">
-      <img src="images/web/3.png" class="card-img-top" alt="home">
-      <div class="card-body">
-        <h2 class="card-title">Projektētājiem</h2>
-        <p class="card-text">Sastādu būvprojekta tāmes un apjomus ar augstu precizitāti un ar ļoti minimāliem labojumiem ekspertīzes posmā. Parakstu tāmes arī BIS sistēmā.</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"> Tāme Jūsu idejai</li>
-        <li class="list-group-item"> Tāme būvprojekta minimālā sastāvā</li>
-        <li class="list-group-item"> Būvprojekta ekonomiskās daļas izstrāde</li>
-      </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<section id="contact">
-<!-- FOOTER -->
-<div class="row footer-format">
-  <div class="col">
-    <a class="btn btn-dark main-buttons border-0" href="https://www.linkedin.com/in/mikus-laksbergs-52a8511b6/" role="button"><i class="fa-brands fa-linkedin fa-fade fa-2xl" style="color: #ffffff;"></i></a>
-    <a class="btn btn-dark main-buttons border-0" href="mailto:mikuslaksbergs@gmail.com" role="button"><i class="fa-solid fa-envelope fa-fade fa-2xl" style="color: #ffffff;"></i></a>
-    <a class="btn btn-dark main-buttons border-0" href="tel:+37129673270" role="button"><i class="fa-solid fa-phone-volume fa-shake fa-2xl" style="color: #ffffff;"></i></a>
-  </div>
-    <p><br>
-       <br>
-      SIA "ML Tāmes",
-      Reģ.nr.40203498400 <br>
-      Tālrunis: +371 29673270 <br>
-      MikusLaksbergs@gmail.com <br>
-      © Copyright 2025 Mikus Laksbergs</p>
   </div>
 </section>
+
+<!-- FOOTER -->
+
+<div class="row mt-5 text-center footer-format">
+      <div class="col">
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="https://www.linkedin.com/in/mikus-laksbergs/" role="button">
+          <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+        </a>
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="mailto:mikuslaksbergs@gmail.com" role="button">
+          <i class="fa-solid fa-envelope me-2"></i>E-pasts
+        </a>
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="tel:+37129673270" role="button">
+          <i class="fa-solid fa-phone-volume me-2"></i>+371 29673270
+        </a>
+      </div>
+  
+      <div class="text-center text-secondary mt-4">
+        <p>SIA "ML Tāmes",<br>
+         Reģ.nr. 40203498400<br>
+         Tālrunis: +371 29673270<br>
+         mikuslaksbergs@gmail.com
+        </p>
+        <p>© <span id="current-year"></span> Mikus Laksbergs. Visas tiesības aizsargātas.</p>
+      </div>
+</div>
+
+
+<script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
