@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Būvniecības tāmes sastādīšana. Būvprojekta ekonomiskās daļas izstrāde. Ēku, ceļu būvniecības tāmes un iekšējo, ārējo inženiertīklu tāmes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+  <!-- BOOTSTRAP LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+      <link rel="stylesheet" href="styles.css">
+
+   <!-- Favicon -->
+
+      <link rel="icon" type="image/png" href="images/icon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="images/icon/favicon.svg" />
+      <link rel="shortcut icon" href="images/icon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png" />
+      <meta name="apple-mobile-web-app-title" content="ML" />
+      <link rel="manifest" href="images/icon/site.webmanifest" />
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0d77925592.js" crossorigin="anonymous"></script>
+
+    <title>Kalkulators</title>
+
+</head>
+<body>
+
+<!-- MAIN PAGE -->
+<section id="main">
+    <div class="main-page container-fluid p-0">
+
+<!-- Offcanvas Navigācija -->
+<nav class="navbar navbar-dark bg-transparent fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigācija</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Aizvērt"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Sākums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="kalkulators.html">Kalkulators</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- PORTFOLIO TEXT -->
+<div class="portfolio-text port-text-format">
+  <div class="row">
+    <div class="col">
+      <h1>Mikus Laksbergs -<br> 
+        Privātmājas būvniecības izmaksu kalkulators
+      </h1>
+      <h3>Ātrs orientējošs aprēķins privātmājas būvniecības budžetam.<br>
+        Izvēlies galvenos parametrus un uzreiz redzi aptuvenās izmaksas.</h3>
+      <br>
+    </div>
+</div>
+</div>
+
+    <section class="grid">
+      <div class="calc-card">
+        <div class="field">
+          <div class="field-top">
+            <div class="field-label">Mājas platība</div>
+            <div class="field-value"><span id="areaValue">150</span> m²</div>
+          </div>
+          <input type="range" id="area" min="50" max="300" step="5" value="150" />
+          <div class="range-scale">
+            <span>50 m²</span>
+            <span>300 m²</span>
+          </div>
+        </div>
+
+        <div class="field">
+        <div class="field-top">
+            <div class="field-label">Konstrukcijas tips</div>
+        </div>
+
+        <div class="option-grid three">
+
+            <div class="radio-card">
+            <input type="radio" id="struct-wood" name="structure" value="wood" />
+            <label for="struct-wood">Koks</label>
+            </div>
+
+            <div class="radio-card">
+            <input type="radio" id="struct-masonry" name="structure" value="masonry" checked />
+            <label for="struct-masonry">Mūris</label>
+            </div>
+
+            <div class="radio-card">
+            <input type="radio" id="struct-concrete" name="structure" value="concrete" />
+            <label for="struct-concrete">Betons vai cits</label>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="field">
+          <div class="field-top">
+            <div class="field-label">Cenu līmenis</div>
+          </div>
+          <div class="option-grid three">
+            <div class="radio-card">
+              <input type="radio" id="level-economy" name="level" value="economy" />
+              <label for="level-economy">Ekonomiska</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" id="level-standard" name="level" value="standard" checked />
+              <label for="level-standard">Standarta</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" id="level-higher" name="level" value="higher" />
+              <label for="level-higher">Augstāka</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-top">
+            <div class="field-label">Stāvu skaits</div>
+          </div>
+          <div class="option-grid">
+            <div class="radio-card">
+              <input type="radio" id="floors-1" name="floors" value="1" checked />
+              <label for="floors-1">1 stāvs</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" id="floors-2" name="floors" value="2" />
+              <label for="floors-2">2 stāvi</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-top">
+            <div class="field-label">Iekšējā apdare</div>
+          </div>
+          <div class="option-grid">
+            <div class="radio-card">
+              <input type="radio" id="finish-no" name="finish" value="no" />
+              <label for="finish-no">Bez apdares</label>
+            </div>
+            <div class="radio-card">
+              <input type="radio" id="finish-yes" name="finish" value="yes" checked />
+              <label for="finish-yes">Ar apdari</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-top">
+            <div class="field-label">Papildus iekļaut aprēķinā</div>
+          </div>
+          <div class="option-grid three">
+            <div class="check-card">
+              <input type="checkbox" id="internal" checked />
+              <label for="internal">
+                <span class="check-mark"></span>
+                Iekšējie inženiertīkli
+              </label>
+            </div>
+            <div class="check-card">
+              <input type="checkbox" id="external" checked />
+              <label for="external">
+                <span class="check-mark"></span>
+                Ārējie inženiertīkli
+              </label>
+            </div>
+            <div class="check-card">
+              <input type="checkbox" id="siteworks" />
+              <label for="siteworks">
+                <span class="check-mark"></span>
+                Teritorijas labiekārtošana
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="result-card">
+        <div class="result-head">
+          <div>
+            <h2 class="result-title">Aptuvenās izmaksas</h2>
+            <p class="result-sub">Orientējošs budžets jūsu izvēlētajai konfigurācijai (bez PVN)</p>
+          </div>
+          <div class="result-badge" id="levelBadge">Standarta</div>
+        </div>
+
+        <div class="price-box">
+          <p class="price-main" id="totalPrice">277 500 €</p>
+          <div class="price-meta">
+            <span id="pricePerM2">1 850 €</span> / m²
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Platība</div>
+            <div class="stat-value"><span id="summaryArea">150</span> m²</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Aprēķina līmenis</div>
+            <div class="stat-value" id="summaryType">Karkass · 1 stāvs · Ar apdari</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Tāmes izstrāde</div>
+            <div class="stat-value" id="estimateFee">No 200 € + PVN</div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/37129673270?text=Labdien! Vēlos aprēķinu privātmājai." class="cta">Saņemt precīzu aprēķinu</a>
+
+        <div class="note">
+          Aprēķins ir informatīvs un balstīts uz orientējošu modeli. Precīzai tāmei nepieciešams projekts vai plāni.
+        </div>
+
+        <details class="included">
+          <summary>Kas iekļauts aprēķinā?</summary>
+          <p>
+            Ēkas karkass, jumts, fasāde, logi/durvis, kā arī izvēlēto papildus pozīciju ietekme uz kopējo budžetu.
+          </p>
+        </details>
+      </aside>
+    </section>
+
+    <div class="mobile-bar">
+      <div class="mobile-total">
+        <span>Aptuvenās izmaksas</span>
+        <strong id="mobileTotal">277 500 €</strong>
+      </div>
+      <a href="https://wa.me/37129673270?text=Labdien! Vēlos aprēķinu privātmājai." class="cta">Saņemt precīzu aprēķinu</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+<div class="row mt-5 text-center footer-format">
+      <div class="col">
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="https://www.linkedin.com/in/mikus-laksbergs/" role="button">
+          <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+        </a>
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="mailto:mikuslaksbergs@gmail.com" role="button">
+          <i class="fa-solid fa-envelope me-2"></i>E-pasts
+        </a>
+        <a class="btn btn-outline-light btn-lg m-2 rounded-pill px-4" href="tel:+37129673270" role="button">
+          <i class="fa-solid fa-phone-volume me-2"></i>+371 29673270
+        </a>
+        
+
+      </div>
+  
+      <div class="text-center text-secondary mt-4">
+        <p>SIA "ML Tāmes",<br>
+         Reģ.nr. 40203498400<br>
+         Tālrunis: +371 29673270<br>
+         mikuslaksbergs@gmail.com
+        </p>
+        <p>© <span id="current-year"></span> Mikus Laksbergs. Visas tiesības aizsargātas.</p>
+      </div>
+  </div>
+
+  <script>
+    const areaInput = document.getElementById("area");
+    const areaValue = document.getElementById("areaValue");
+    const summaryArea = document.getElementById("summaryArea");
+    const pricePerM2El = document.getElementById("pricePerM2");
+    const totalPriceEl = document.getElementById("totalPrice");
+    const mobileTotalEl = document.getElementById("mobileTotal");
+    const summaryTypeEl = document.getElementById("summaryType");
+    const estimateFeeEl = document.getElementById("estimateFee");
+    const levelBadgeEl = document.getElementById("levelBadge");
+
+    function getSelectedValue(name) {
+      return document.querySelector(`input[name="${name}"]:checked`).value;
+    }
+
+    function formatEuro(value) {
+      return new Intl.NumberFormat("lv-LV", {
+        maximumFractionDigits: 0
+      }).format(value) + " €";
+    }
+
+    function calculateEstimateFee(area) {
+      if (area <= 200) return "No 200 € + PVN";
+      if (area <= 250) return "No 250 € + PVN";
+      return "No 300 € + PVN";
+    }
+
+    function calculate() {
+      const area = Number(areaInput.value);
+      const structure = getSelectedValue("structure");
+      const level = getSelectedValue("level");
+      const floors = getSelectedValue("floors");
+      const finish = getSelectedValue("finish");
+
+      const internal = document.getElementById("internal").checked;
+      const external = document.getElementById("external").checked;
+      const siteworks = document.getElementById("siteworks").checked;
+
+      const baseMap = {
+      economy: 1450,
+      standard: 1600,
+      higher: 1700
+      };
+
+      let basePerM2 = baseMap[level] || 1600;
+
+      let structureFactor = 1.0;
+      if (structure === "wood") structureFactor = 0.91;
+      if (structure === "masonry") structureFactor = 1.00;
+      if (structure === "concrete") structureFactor = 1.08;
+
+      const floorMap = {
+        1: 1.0,
+        2: 1.07
+      };
+
+      let floorFactor = floorMap[floors] || 1.0;
+
+      let finishAdj = finish === "no" ? -200 : 0;
+
+      let extras = 0;
+      if (internal) extras += 190;
+      if (external) extras += 45;
+      if (siteworks) extras += 140;
+
+      const pricePerM2 = Math.round(basePerM2 * structureFactor * floorFactor + finishAdj + extras);
+      const totalPrice = Math.round(pricePerM2 * area);
+
+      areaValue.textContent = area;
+      summaryArea.textContent = area;
+      pricePerM2El.textContent = formatEuro(pricePerM2);
+      totalPriceEl.textContent = formatEuro(totalPrice);
+      mobileTotalEl.textContent = formatEuro(totalPrice);
+      estimateFeeEl.textContent = calculateEstimateFee(area);
+
+      const structureMap = {
+        wood: "Koks",
+        masonry: "Mūris",
+        concrete: "Betons vai cits"
+      };
+
+      const structureText = structureMap[structure] || "Mūris";
+      const floorsText = floors === "2" ? "2 stāvi" : "1 stāvs";
+      const finishText = finish === "no" ? "Bez apdares" : "Ar apdari";
+
+      summaryTypeEl.textContent = `${structureText} · ${floorsText} · ${finishText}`;
+            const levelText =
+              level === "economy" ? "Ekonomiska" :
+              level === "higher" ? "Augstāka" :
+              "Standarta";
+
+      levelBadgeEl.textContent = levelText;
+      }
+
+    document.querySelectorAll('input').forEach((input) => {
+      input.addEventListener('input', calculate);
+      input.addEventListener('change', calculate);
+    });
+
+    calculate();
+  </script>
+</body>
+</html>
