@@ -379,20 +379,20 @@
 
       levelBadgeEl.textContent = levelText;
 
-      const message = `
-      Labdien!
-      
-      Vēlos saņemt piedāvājumu.
-      
-      Platība: ${area} m²
-      Stāvi: ${floorsText}
-      
-      Aptuvenās būvniecības izmaksas:
-      ${formatEuro(totalPrice)}
-      
-      Aptuvenā tāmes izstrādes cena:
-      ${calculateEstimateFee(area)}
-      `;
+const message = [
+  "Labdien!",
+  "",
+  "Vēlos saņemt piedāvājumu.",
+  "",
+  `Platība: ${area} m²`,
+  `Stāvi: ${floorsText}`,
+  "",
+  "Aptuvenās būvniecības izmaksas:",
+  formatEuro(totalPrice),
+  "",
+  "Aptuvenā tāmes izstrādes cena:",
+  calculateEstimateFee(area)
+].join("\n");
       
       const whatsappUrl =
       `https://wa.me/37129673270?text=${encodeURIComponent(message)}`;
