@@ -236,7 +236,7 @@
           </div>
         </div>
 
-        <a href="https://wa.me/37129673270?text=Labdien! Vēlos aprēķinu privātmājai." class="cta">Saņemt precīzu aprēķinu</a>
+        <a href="#" class="cta">Saņemt precīzu aprēķinu</a>
 
         <div class="note">
           Aprēķins ir informatīvs un balstīts uz orientējošu modeli. Precīzai tāmei nepieciešams projekts vai plāni.
@@ -256,7 +256,7 @@
         <span>Aptuvenās izmaksas</span>
         <strong id="mobileTotal">277 500 €</strong>
       </div>
-      <a href="https://wa.me/37129673270?text=Labdien! Vēlos aprēķinu privātmājai." class="cta">Saņemt precīzu aprēķinu</a>
+     <a href="#" class="cta">Saņemt precīzu aprēķinu</a>
     </div>
   </div>
 
@@ -378,12 +378,37 @@
               "Standarta";
 
       levelBadgeEl.textContent = levelText;
-      }
+
+      const message = `
+      Labdien!
+      
+      Vēlos saņemt piedāvājumu.
+      
+      Platība: ${area} m²
+      Stāvi: ${floorsText}
+      
+      Aptuvenās būvniecības izmaksas:
+      ${formatEuro(totalPrice)}
+      
+      Aptuvenā tāmes izstrādes cena:
+      ${calculateEstimateFee(area)}
+      `;
+      
+      const whatsappUrl =
+      `https://wa.me/37129673270?text=${encodeURIComponent(message)}`;
+      
+      document.querySelectorAll(".cta").forEach((btn) => {
+        btn.href = whatsappUrl;
+        btn.target = "_blank";
+      });}
+
+
 
     document.querySelectorAll('input').forEach((input) => {
       input.addEventListener('input', calculate);
       input.addEventListener('change', calculate);
     });
+
 
     calculate();
   </script>
